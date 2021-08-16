@@ -28,23 +28,6 @@ Android(Mobile and Tablet), iOS(Mobile and Tablet)
 Translation API - Google Cloud Translation
 Lnaguage API - Microsoft Translator
 
-## Lighthouse performance score - Desktop
-
-## Lighthouse accessibility score - Desktop
-
-## Lighthouse SEO score - Desktop
-
-## Lighthouse best practices score - Desktop
-
-## Lighthouse performance score - Mobile
-
-## Lighthouse accessibility score - Mobile
-
-## Lighthouse SEO score - Mobile
-
-## Lighthouse best practices score - Mobile
-
-## Available Scripts
 
 In the project directory, you can run:
 
