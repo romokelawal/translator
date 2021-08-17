@@ -23,11 +23,10 @@ type Props = {
 	result: string;
 	target: any;
 	showTip: boolean;
-	handleTextAreaChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
 	setShowTip: Function;
 };
 
-const TranslateResult: React.FC<Props> = ({ result, target, showTip, handleTextAreaChange, setShowTip }) => {
+const TranslateResult: React.FC<Props> = ({ result, target, showTip, setShowTip }) => {
 	return (
 		<Row>
 			<Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" style={{ position: 'relative' }}>
@@ -41,8 +40,7 @@ const TranslateResult: React.FC<Props> = ({ result, target, showTip, handleTextA
 					<Form.Control
 						as="textarea"
 						disabled
-						onChange={handleTextAreaChange}
-						value={result}
+						value={result !== undefined ? result : 'Language not supported!'}
 						style={{ height: '100px' }}
 					/>
 				</ClipBoard>

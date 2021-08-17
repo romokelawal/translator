@@ -15,7 +15,7 @@ export const Translator = {
 			.then((jsonResponse) => {
 				return jsonResponse.data.translations[0].translatedText;
 			})
-			.catch((error) => console.log('Failed to translate', error));
+			.catch((error) => console.log('Failed to translate:', error));
 	},
 	getLanguages() {
 		return fetch('https://api.cognitive.microsofttranslator.com/languages?api-version=3.0')
@@ -23,6 +23,6 @@ export const Translator = {
 			.then((jsonResponse) => {
 				return jsonResponse.translation;
 				
-			});
+			}).catch(error => console.error('Failed to load languages:', error));
 	}
 };

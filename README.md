@@ -1,3 +1,24 @@
+# Notice
+I decided not to use Google Cloud Translation to generate the supported languages, because it requires Google Service Account Key to be uploaded to the local directory or repository and this can cause security risk for the Google acount where the service key was generated from or deployment complications.
+Therefore, I used Microsoft Trnaslator to generate the languages but some languages generated are not supported by Google Cloud Translation. The unsupported languages are: 
+Assamese
+Fijian
+French (Canada)
+Inuktitut
+Kurdish (Northern)
+Hmong Daw
+Queretaro Otomi
+Dari
+Portuguese (Portugal)
+Serbian (Cyrilic)
+Tigrinya
+Klingon (Latin)
+Klingon (plqaD)
+Tongan
+Tahitian
+Yucatec Maya
+Cantonese (Traditional)
+
 # Requirements
 Display a form with:
     Input text - Done
@@ -13,10 +34,6 @@ Display the previous search - Done
 Presentational and Container Components arrangement
 Presentational components are concerned with how things look, do not specify how the data is loaded, and rarely have states etc. In this project, they are in the components folder in the src folder.
 Container components are concerned with how things work, they provide the data and behaviour to presentational components. In this project, they are in the container folder in the src folder.
-
-## Notice
-Due to the fact that the languages are gotten from Microsoft Translator and the translations are from Google Cloud Translation, some languages are not available for translation even though they are available from Mircosoft Translator.
-
 
 ## Deployment Checklist
 

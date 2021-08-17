@@ -8,22 +8,18 @@ type Props = {
 };
 
 const TranslateResultContainer: React.FC<Props> = (results) => {
-	const [ result, setResult ] = useState('');
+	const result = results.results;
 	const [ showTip, setShowTip ] = useState(false);
 	const target = useRef(null);
-
-	const handleTextAreaChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
-		setResult(e.target.value);
-	};
+	
 	useEffect(
 		() => {
-			setResult(results.results);
 			const timerId = setInterval(() => {
 				setShowTip(showTip ? !showTip : showTip);
 			}, 3000);
 			return () => clearInterval(timerId);
 		},
-		[ results, showTip ]
+		[ showTip ]
 	);
 
 	return (
@@ -31,7 +27,6 @@ const TranslateResultContainer: React.FC<Props> = (results) => {
 			result={result}
 			target={target}
 			showTip={showTip}
-			handleTextAreaChange={handleTextAreaChange}
 			setShowTip={setShowTip}
 		/>
 	);
